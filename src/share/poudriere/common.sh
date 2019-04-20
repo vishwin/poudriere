@@ -2326,9 +2326,6 @@ setup_xdev() {
 
 	msg_n "Setting up native-xtools environment in jail..."
 	cat > "${mnt}/etc/make.nxb.conf" <<-EOF
-	CC=/nxb-bin/usr/bin/cc
-	CPP=/nxb-bin/usr/bin/cpp
-	CXX=/nxb-bin/usr/bin/c++
 	NM=/nxb-bin/usr/bin/nm
 	LD=/nxb-bin/usr/bin/ld
 	OBJCOPY=/nxb-bin/usr/bin/objcopy
