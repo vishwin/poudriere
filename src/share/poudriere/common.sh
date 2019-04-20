@@ -2356,7 +2356,7 @@ setup_xdev() {
 			usr/bin/find usr/bin/gzcat usr/bin/awk \
 			usr/bin/touch usr/bin/sed usr/bin/patch \
 			usr/bin/install usr/bin/gunzip \
-			usr/bin/readelf usr/bin/sort \
+			usr/bin/readelf usr/bin/sort usr/bin/strings \
 			usr/bin/tar usr/bin/wc usr/bin/xargs usr/sbin/chown bin/cp \
 			bin/cat bin/chmod bin/echo bin/expr \
 			bin/hostname bin/ln bin/ls bin/mkdir bin/mv \
