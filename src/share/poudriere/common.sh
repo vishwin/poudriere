@@ -3618,7 +3618,6 @@ setup_xdev() {
 	SIZE=/nxb-bin/usr/bin/size
 	RANLIB=/nxb-bin/usr/bin/ranlib
 	STRINGS=/nxb-bin/usr/bin/strings
-	INSTALL=/nxb-bin/usr/bin/install -c
 	AWK=/nxb-bin/usr/bin/awk
 	BASENAME=/nxb-bin/usr/bin/basename
 	BSDMAKE=/nxb-bin/usr/bin/make
