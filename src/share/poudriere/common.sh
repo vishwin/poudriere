@@ -2754,6 +2754,9 @@ setup_xdev() {
 	STRINGS=/nxb-bin/usr/bin/strings
 	AWK=/nxb-bin/usr/bin/awk
 	FLEX=/nxb-bin/usr/bin/flex
+	FIND=/nxb-bin/usr/bin/find
+	GREP=/nxb-bin/usr/bin/grep
+	XARGS=/nxb-bin/usr/bin/xargs
 	EOF
 
 	# as(1) has been removed in FreeBSD 13.0.  Just check if it's present
