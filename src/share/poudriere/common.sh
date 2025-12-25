@@ -3046,6 +3046,7 @@ do_portbuild_mounts() {
 		    "${mnt:?}/.npkg" \
 		    "${mnt:?}/var/db/ports" \
 		    "${mnt:?}${HOME:?}/.ccache" \
+		    "${mnt:?}/var/run/kvstore" \
 		    "${mnt:?}/usr/home"
 		for o in ${OVERLAYS}; do
 			mkdir -p "${mnt:?}${OVERLAYSDIR:?}/${o:?}"
@@ -3057,6 +3058,9 @@ do_portbuild_mounts() {
 	esac
 	if [ -d "${CCACHE_DIR:-/nonexistent}" ]; then
 		${NULLMOUNT} "${CCACHE_DIR:?}" "${mnt:?}${HOME:?}/.ccache"
+	fi
+	if [ -d "${CCACHE_KVSTORE:-/nonexistent}" ]; then
+		${NULLMOUNT} "${CCACHE_KVSTORE:?}" "${mnt:?}/var/run/kvstore"
 	fi
 	case "${MFSSIZE:+set}" in
 	set)
